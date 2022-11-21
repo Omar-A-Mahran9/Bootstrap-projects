@@ -1,0 +1,254 @@
+:root{
+    --dark-color:#24484f;
+    --white-color:#10cab7;
+    --sec:rgb(254, 158, 195);
+    
+}
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.parent{
+    background-color: #eee;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+.container{
+    width: 750px;
+}
+}
+@media(min-width:992px){
+    .container{
+        width: 970;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:1170px;
+    }
+    
+}
+/*------------------special heading-------------------*/
+.services{
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+  
+    padding-bottom: 80px;
+}
+.services .special-heading{
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+    opacity: 30%;
+    font-size: 200px;
+    font-weight: 800;
+    letter-spacing: -15px;
+    margin: 0;
+}
+@media (max-width:767px){
+    .services .special-heading{
+      font-size: 100px;
+    }
+    
+}
+.services .special-heading + p{
+margin: -35px 0px;
+color: #0d2b31;
+width: 100%;
+}
+.services .service-content{
+ padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,2fr));
+    grid-gap:30px;
+  text-align:justify;
+    overflow: hidden;
+}
+.services .service-content .col .img{
+rotate: 90deg;
+margin-top: 45px;
+}
+ 
+@media(max-width:767px){
+    .services .service-content .col .ser{
+        display: flex;
+        margin-bottom: 30px;
+        flex-direction: column;
+     text-align: center;
+    }
+}
+.services .service-content .ser i{
+    color:var(--white-color)
+}
+.services .service-content .col .ser {
+    color: var(--dark-color);
+}
+/*------------------special heading-------------------*/
+/*------------------Nav bar-------------------*/
+
+.header{
+    background-color: rgb(233, 255, 248);
+    padding: 20px;
+    
+}
+.header .container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+.header img{
+    width: 9%;
+}
+
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    cursor: pointer;
+
+}
+.header .links .icon span{
+    background-color: var(--dark-color);
+   margin-bottom: 5px;
+   height: 4px;
+   position: relative;
+
+}
+.header .links .icon span:first-child{
+height: 3px;
+width: 100%;
+}
+
+.header .links .icon span:nth-child(2){
+height: 3px;
+width: 50%;
+transition: 0.3s;
+}
+
+.header .links .icon span:last-child{
+height: 3px;
+width: 100%;
+}
+
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+
+}
+
+.header ul{
+  background-color: #24484f;
+    color:white;
+   position: absolute;
+    list-style: none;
+    right: 9.5%;
+    min-width: 250px;
+    border-bottom-left-radius:23px;
+    top: 6%;
+    padding: 20px;
+   display:block ; 
+   text-align: center;
+   display: none;
+}
+
+.header .links:hover ul{
+    display: block;
+    z-index: 1;
+
+}
+.header ul::before{
+    content: "";
+    border:10px solid;
+    border-color: transparent transparent var(--dark-color) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px
+    
+
+
+}
+.header ul a:hover{
+   
+  padding-right: 40px;
+
+
+}
+
+.header ul li a{
+    display:block;
+    padding: 10px;
+    transition: .3s;
+}
+
+.header ul li:not(:last-child) a{
+    border-bottom: 1px solid;
+}
+
+/*------------------Nav bar-------------------*/
+/*------------------Landing-------------------*/
+.landing{
+  
+    background-image: url(../img/3.jpeg); 
+    background-size: cover;
+    height:calc(100vh - 80px);
+    position: relative;
+}
+.landing .note{
+    position: absolute;
+ margin: auto;
+ left: 50%;
+transform: translate(-50%,300%);
+text-align: center;
+width: 100%;
+}
+.landing .container h1{
+font-weight: bold;
+color: var(--dark-color);
+}
+.landing .container p{
+color: var(--white-color);
+}
+/*------------------Landing-------------------*/
+/*------------------fea-------------------*/
+.feature{
+    background-color: #cffffa;
+    padding-top: 50px;
+    padding-top: 50px;
+}
+.feature .container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr)) ;
+    gap:50px;
+    justify-content: center;
+}
+.feature .feat i{
+   
+    color:red;
+}
+.feature .feat{
+  padding: 20px;
+  text-align: center;
+  color: #0d2b31;
+}
+.feature .feat p{
+line-height: 25px;
+}
+
+.feature .feat h3{
+   
+    font-weight: 800;
+    margin: 30px;
+}
+
+/*------------------fea-------------------*/

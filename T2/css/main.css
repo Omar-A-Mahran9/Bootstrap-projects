@@ -1,0 +1,256 @@
+:root{
+    --dark-color:rgb(149, 0, 57);
+    --white-color:rgb(85, 0, 100);
+    --sec:rgb(254, 158, 195);
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+.btn-main{
+    background-color: var(--white-color);
+    border: none;
+    color: white;
+}
+
+ 
+
+.navbar{
+    background-color: var(--dark-color);
+ 
+}
+.navbar .navbar-nav .nav-link{
+color: white;
+}
+
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: white;
+    color:  var(--white-color);
+}
+
+.navbar .search{
+    border-left: 3px solid var(--white-color);
+}
+
+.navbar .search svg{
+    color: var(--white-color);
+    font-size: 25px ;
+    cursor: pointer;
+}
+.navbar .navbar-toggler{
+color: white;
+border: 2px solid;
+}
+.navbar .navbar-toggler:focus{
+box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded=true]{
+    border-color: var(--white-color);
+}
+ 
+
+
+/**************************/
+.landing {
+
+    background-color:var(--dark-color);
+    background-image: url("../image/pregnant-woman-with-ginecologist-in-the-office-2022-01-18-23-45-36-utc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 69px);
+    color: var(--dark-color);
+    
+}
+ 
+.container .mainTitle svg{
+    margin-top: 40px;
+    font-size: 80px;
+    color: var(--white-color);
+}
+.feature{
+color: var(--white-color);
+}
+
+.mainTitle::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--dark-color);
+    position: absolute;
+    transform: translateX(-50%);
+
+}
+.feature .row .icon-holder{
+    height: 200px;
+}
+.feature .row .icon-holder svg  {
+    font-size: 150px;
+    color: var(--dark-color);
+}
+.workhistory{
+    background-color: var(--sec);
+    color: var(--white-color);
+}
+
+.workhistory .container .lis .listul li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin: 4px;
+    color: var(--white-color);
+}
+.workhistory .container .lis .listul li.active{
+ background-color: var(--white-color);
+ color: white;
+ border-radius: 20px;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+.workhistory .container .lis .listul li:not(.active):hover{
+ 
+    color: white;
+   
+   }
+
+.workhistory .box{
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+    box-shadow: 1px 1px 5px var(--white-color) ;
+} 
+
+.workhistory .box::before{
+content: attr(data-work);
+position: absolute;
+color: white;
+background-color: var(--white-color);
+opacity: 60%;
+ width: calc(100% - 6px);
+ height: calc(100% - 6px);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+ font-size: 1.5rem;
+ transition: .3s;
+ transform: translateX(calc(-100% - 5px));
+}
+
+.workhistory .box:hover::before{
+    transform: translateX(0);
+}
+.stuff{
+    color: var(--white-color);
+}
+
+.stuff .dec{
+    max-width: 400px;
+    
+}
+.Team{
+    background-color: var(--sec);
+    color: var(--white-color);
+    
+}
+.Team .row h5{
+    background-color: var(--white-color);
+    color: white;
+    padding: 11px;
+}
+.Team .row 
+.Team .row img{
+    border-radius: 10px;
+}
+.brand .row{
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:inherit;
+    position: relative;
+    animation-timing-function: ease-out;
+   
+}
+
+@keyframes slide {
+from{
+    
+    opacity: 100%;
+}
+to{
+    opacity: 10%;
+    
+    
+}
+}
+.project{
+    background-color: var(--dark-color);
+}
+
+
+.News .mainTitle{
+    color: var(--white-color);
+}
+
+.News .mainTitle i{
+    font-size: 45px;
+}
+.News .box .car{
+padding-left: 10px;
+padding-top: 6px;
+padding-bottom: 5px;
+}
+.News .box{
+    color: rgb(224, 224, 224);
+    background-color: rgb(249, 240, 252);
+    
+    border-radius: 8px;
+}
+
+.subscribe{
+    background-color: var(--white-color);
+}
+.subscribe label{
+padding-top: 15px;
+}
+.subscribe input[type="text"]{
+background-color:transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+
+}
+.subscribe input[type="text"]:focus{
+outline: none;
+}
+.subscribe ::placeholder{
+    color: white;
+    opacity: 80%;
+}
+.subscribe input[type="submit"]{
+   background-color:var(--dark-color);
+   border: none;
+   padding: 6px;
+    color: white;
+}
+
+footer{
+    background-color: var(--dark-color);
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(86, 126, 86);
+}
+footer a:hover{
+color: rgb(255, 255, 255);
+}
+
+
+footer .icon{
+    color: rgb(255, 248, 235);
+
+}
+
